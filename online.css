@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2ecc71;
+  color: white;
+}
+
+header input {
+  padding: 8px;
+  width: 200px;
+}
+
+.banner {
+  background: url('https://via.placeholder.com/1200x300') no-repeat center/cover;
+  height: 300px;
+  opacity: 0.9;
+}
+
+.welcome {
+  text-align: center;
+  padding: 30px;
+  background: #ecf0f1;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery .item {
+  flex: 1;
+  min-width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 5px;
+  position: relative;
+  background-image: url('https://via.placeholder.com/300');
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.block.reverse {
+  flex-direction: row-reverse;
+}
+
+.block img {
+  width: 300px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2ecc71;
+  color: white;
+}
